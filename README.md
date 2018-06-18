@@ -5,7 +5,7 @@ mpy.py is a python program that reads gas purchase records from a file, then com
 mileage and other statistics.
 
 
-## Usage and examples
+## Usage
 
 How to run mpg:
 
@@ -16,7 +16,9 @@ Command-line parameter:
     python mpg.py -h
 
 Display a help message, which is the mpg.py module docstring.
-    
+
+## Input file
+
 There is one required input file, which must be in the current working directory. The default file
 name is *gas_purchases.txt*, but this can be changed by modifying a program constant. This file can
 contain comment lines and gas purchase lines. Comment lines start with a `#` character (can have
@@ -36,7 +38,7 @@ Where:
 * `odometer mileage` is an integer
 * `optional comments` is an unquoted string without embedded commas, and is optional (max 25 chars)
 
-## Example input file:
+Example input file:
 
     # Transit Connect gas purchases, for MPG calculation
     #
@@ -54,6 +56,8 @@ Where:
     11/19/2016, Costco Cville, 12.229, 1.769, 21.63, 3431, almost out of gas
     11/27/2016, Wawa Gainsville, 6.094, 1.969, 12.00, 3588
 
+## Output file
+
 The program produces one output file in the current working directory, and displays the identical
 information on the console. The default file name is *mpg_results.txt*, but this can be changed by
 modifying a program constant. The file is overwritten if it already exists.
@@ -67,7 +71,7 @@ computation is different than the total miles and gallons for the entire file (t
 both). This is because the gallons/miles for the first gas purchase in the file are NOT included in 
 the overall MPG calculation, but are included in the totals for the file.
 
-## Example output file:
+Example output file:
 
     Gas Mileage Statistics as of 06/14/2018
     
@@ -113,14 +117,12 @@ the overall MPG calculation, but are included in the totals for the file.
 * Edited with notepad++.
 * All running on Windows 7. 
 
-Installation
-------------
+## Installation
 
 The entire program consists of a single file, *mpg.py*. There is no formal installation
 procedure, merely copy the file from the repository to your local hard drive.
 
-License
--------
+## License
 
 The MIT License (MIT) - Copyright (c) 2018 John Santic
 
@@ -140,12 +142,10 @@ noninfringement. In no event shall the authors or copyright holders be liable fo
 damages or other liability, whether in an action of contract, tort or otherwise, arising from,
 out of or in connection with the Software or the use or other dealings in the Software.
 
-Author
-------
+## Author
 
 John Santic, email johnsantic  <at\>  g m a i l  <dot\>  c o m
 
-Revision history
-----------------
+## Revision history
 
 03-Jun-2018 - create original
